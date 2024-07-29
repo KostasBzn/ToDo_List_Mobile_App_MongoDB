@@ -17,7 +17,7 @@ const corsOptions = {
   allowedHeaders:
     "Origin, X-Requested-With, Content-Type, Accept, Authorization",
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use("/users", userRoutes);
 app.use("/todos", todoRoutes);
